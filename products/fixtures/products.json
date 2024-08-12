@@ -1,0 +1,296 @@
+[
+  {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+          "sku": "sb001",
+          "name": "Cherry Blossom",
+          "description": "A delicate blend of cherry blossom, capturing the essence of spring in full bloom.",
+          "price": 14.75,
+          "collection": 1,
+          "rating": 4.3,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+          "sku": "sb002",
+          "name": "Fresh Rain",
+          "description": "Refreshing notes of fresh rain on a spring morning, paired with the soft scent of blooming flowers.",
+          "price": 9.85,
+          "collection": 1,
+          "rating": 4.0,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+          "sku": "sb003",
+          "name": "Lavender Fields",
+          "description": "Calming lavender fields with a hint of fresh rain, perfect for a peaceful spring day.",
+          "price": 17.20,
+          "collection": 1,
+          "rating": 4.7,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+          "sku": "se001",
+          "name": "Coconut Lime",
+          "description": "A tropical blend of creamy coconut and zesty lime, perfect for a summer escape.",
+          "price": 12.30,
+          "collection": 2,
+          "rating": 4.5,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+          "sku": "se002",
+          "name": "Tropical Pineapple",
+          "description": "Juicy tropical pineapple with a touch of sweetness, bringing the island vibes to you.",
+          "price": 16.90,
+          "collection": 2,
+          "rating": 4.2,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+          "sku": "se003",
+          "name": "Ocean Breeze",
+          "description": "A refreshing scent of ocean air, capturing the essence of a seaside summer day.",
+          "price": 8.75,
+          "collection": 2,
+          "rating": 4.0,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+          "sku": "ah001",
+          "name": "Pumpkin Spice",
+          "description": "Warm and spicy pumpkin combined with nutmeg and cinnamon, a fall favorite.",
+          "price": 15.20,
+          "collection": 3,
+          "rating": 4.7,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+          "sku": "ah002",
+          "name": "Apple Cider",
+          "description": "The crisp, sweet aroma of fresh apple cider with a hint of cinnamon.",
+          "price": 9.65,
+          "collection": 3,
+          "rating": 4.3,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+          "sku": "ah003",
+          "name": "Cinnamon Vanilla",
+          "description": "Smooth vanilla blended with a spicy cinnamon finish, perfect for cozy autumn nights.",
+          "price": 13.50,
+          "collection": 3,
+          "rating": 4.1,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+          "sku": "ww001",
+          "name": "Peppermint Mocha",
+          "description": "A festive blend of rich chocolate, refreshing peppermint, and a hint of coffee.",
+          "price": 11.40,
+          "collection": 4,
+          "rating": 4.6,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+          "sku": "ww002",
+          "name": "Frosted Pine",
+          "description": "Crisp and cool, capturing the essence of snow-covered pine trees.",
+          "price": 14.85,
+          "collection": 4,
+          "rating": 4.8,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+          "sku": "ww003",
+          "name": "Gingerbread Cookies",
+          "description": "The warm and spicy scent of freshly baked gingerbread cookies.",
+          "price": 7.90,
+          "collection": 4,
+          "rating": 4.4,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+          "sku": "rr001",
+          "name": "Lavender Chamomile",
+          "description": "A soothing blend of calming lavender and gentle chamomile, perfect for relaxation.",
+          "price": 14.75,
+          "collection": 5,
+          "rating": 4.5,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+          "sku": "rr002",
+          "name": "Sandalwood",
+          "description": "Rich and earthy sandalwood, ideal for creating a serene and tranquil atmosphere.",
+          "price": 11.30,
+          "collection": 5,
+          "rating": 4.3,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+          "sku": "rr003",
+          "name": "Eucalyptus Mint",
+          "description": "Refreshing eucalyptus with a hint of mint, designed to clear the mind and refresh the senses.",
+          "price": 9.85,
+          "collection": 5,
+          "rating": 4.7,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+          "sku": "eu001",
+          "name": "Citrus Zest",
+          "description": "A bright and invigorating blend of zesty citrus fruits to energize your day.",
+          "price": 10.60,
+          "collection": 6,
+          "rating": 4.4,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+          "sku": "eu002",
+          "name": "Lemongrass",
+          "description": "Crisp and refreshing lemongrass, perfect for a quick energy boost.",
+          "price": 8.95,
+          "collection": 6,
+          "rating": 4.2,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+          "sku": "eu003",
+          "name": "Peppermint",
+          "description": "Cool and invigorating peppermint, ideal for revitalizing your senses.",
+          "price": 12.25,
+          "collection": 6,
+          "rating": 4.6,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+          "sku": "ra001",
+          "name": "Rose Petals",
+          "description": "Delicate and romantic rose petals, perfect for setting a loving mood.",
+          "price": 13.40,
+          "collection": 7,
+          "rating": 4.8,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+          "sku": "ra002",
+          "name": "Vanilla Musk",
+          "description": "A sensual blend of warm vanilla and alluring musk, ideal for creating a romantic ambiance.",
+          "price": 16.75,
+          "collection": 7,
+          "rating": 4.9,
+          "image_url": "",
+          "image": ""
+      }
+  },
+  {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+          "sku": "ra003",
+          "name": "Jasmine",
+          "description": "Exotic and fragrant jasmine, a timeless scent for a romantic evening.",
+          "price": 9.50,
+          "collection": 7,
+          "rating": 4.5,
+          "image_url": "",
+          "image": ""
+      }
+  }
+]

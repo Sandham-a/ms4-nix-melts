@@ -1,0 +1,58 @@
+[
+    {
+      "pk": 1,
+      "model": "products.collection",
+      "fields": {
+        "name": "spring_blossom",
+        "friendly_name": "Spring Blossom"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.collection",
+      "fields": {
+        "name": "summer_escape",
+        "friendly_name": "Summer Escape"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.collection",
+      "fields": {
+        "name": "autumn_harvest",
+        "friendly_name": "Autumn Harvest"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.collection",
+      "fields": {
+        "name": "winter_wonderland",
+        "friendly_name": "Winter Wonderland"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.collection",
+      "fields": {
+        "name": "relaxation_retreat",
+        "friendly_name": "Relaxation Retreat"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.collection",
+      "fields": {
+        "name": "energizing_uplift",
+        "friendly_name": "Energizing Uplift"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.collection",
+      "fields": {
+        "name": "romantic_ambiance",
+        "friendly_name": "Romantic Ambiance"
+      }
+    }
+  ]  
