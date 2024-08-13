@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Collection</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=collection&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -16,8 +16,8 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="collections-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Collections
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="Seasons-link">
-                <a href="" class="dropdown-item">Seasonal</a>
+            <div class="dropdown-menu border-0" aria-labelledby="collections-link">
+                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Seasonal</a>
                 <a href="" class="dropdown-item">Mood-Enhancing</a>
                 <a href="" class="dropdown-item">Nature-Inspired</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
