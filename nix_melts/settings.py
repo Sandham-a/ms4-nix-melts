@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 from pathlib import Path
 from django.core.mail import send_mail
 
@@ -16,7 +17,9 @@ SECRET_KEY = 'django-insecure-&_cxtw!bv2v)cu25%y8i)uowf!640fxb_3@l61yqw371=wgmnr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-sandhama-ms4nixmelts-o09uxqpr17i.ws.codeinstitute-ide.net', 'other-hosts']
+ALLOWED_HOSTS = ['8000-sandhama-ms4nixmelts-o09uxqpr17i.ws.codeinstitute-ide.net', 'other-hosts',
+                'https://ms4-nix-melts-2c2938ad0154.herokuapp.com/',
+                ]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-sandhama-ms4nixmelts-kwnlrbcg2fq.ws-eu115.gitpod.io']
 
@@ -114,13 +117,17 @@ WSGI_APPLICATION = 'nix_melts.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
