@@ -3,7 +3,7 @@ Developer: Adam Sandham
 
 ![Mockup image](documentation/images/device-display.jpg)
 
-[Live webpage](https://poster-prints-8ff329d79ba2.herokuapp.com/)
+[Live webpage](https://ms4-nix-melts-2c2938ad0154.herokuapp.com/)
 
 Nix Melts is an ecommerce  website allowing users to purchase wax melt fregrences developed for Milestone Project 4 as part of the Code Institute - Level 5 Diploma in Software Development course (Full stack).
 
@@ -152,7 +152,7 @@ The apps are described as follows:
 - profiles: (part of the original Boutique Ado project): This app contains functionality regarding a user's profile and order history
 
 To complement the apps there are:
-- poster_prints: Containing settings.py(Settings) and urls.py(Website urls) for example
+- nix_melts: Containing settings.py(Settings) and urls.py(Website urls) for example
 - templates: Containing the base.html, allauth(django authentication) and includes html files
 - static: Base css and Javascript files, favicon image There is some javascript in some html files, but I have tried to minimise that using separate js files throughout
 - manage.py: Main python file for starting the website
@@ -162,14 +162,11 @@ To complement the apps there are:
 - Requirements.txt: Containing the python libraries installed
 <br>
 
-__Note:__ 
-- Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in and listed in .gitignore, and on Heroku in app settings.
-- I accidentally committed and pushed an exposed Elephant SQL code so I deleted that database and created a new one making the exposed code redundant.
 
 ### Database
 _ _ _
 
-- The website is a data-centric one with html, javascript, css used with the bootstrap(version 4) framework as a frontend
+- The website is a data-centric one with html, javascript, css used with the bootstrap(version 5) framework as a frontend
 - The backend consists of Python built with the Django framework with a database of a Postgres using Elephant SQL for the deployed Heroku version(production)
 - Postgres is a powerful, open-source object-relational database system (https://www.postgresql.org/)
 - A SQLLite database was used for local development (https://www.sqlite.org/index.html)
@@ -406,25 +403,7 @@ Defensive programming is used throughout to prevent users accessing pages they d
 </details>
 <br>
 
-__Stock Management__
-
-For stocked items checks have been made adding items to the bag and then updating quantity again once in the bag. Quantity levels above the stock count will not be updated and a message will alert the user of the stock count. If stock is 3 or below a low stock message is displayed with the stock count in the product detail page allowing the user to act fast should the poster be close to out of stock. If the item is out of stock a different message is displayed on the detail page telling the user. On purchasing a stocked item, the quantity is adjusted depending on the quantity bought. This means there is potential for a low stocked item to be in multiple bags which could lead to upsetting the shopper. Due to time constraints, I haven't had time to look into this further but one option would be to put a time limit on a low stocked item once it's in the bag before removing it from the bag if time ran out. It is something I would love to figure out given more time.
-
- - User stories covered: 28
-
-<details><summary>Stock Alert</summary>
-<img src="documentation/features/stock-level.png">
-</details>
-<br>
-
 ## Consistent Features
-_ _ _
-
-### Favicon 
-
-- I designed the favicon in Illustrator.
-
-  ![Poster Prints Favicon](documentation/features/favicon.png)
 
 ### Navbar 
 
@@ -905,10 +884,6 @@ _ _ _
 - [GitPod](https://www.gitpod.io/) - A cloud development environment.
 - [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 - [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
-- [Tiny PNG](https://tinypng.com/) To compress images for use in the readme.
-- [Visual Studio Code](https://code.visualstudio.com/) - An integrated development environment from Microsoft.
-- [Adobe Suite (Illustrator, Photoshop & InDesign)](https://www.adobe.com/uk/) - Graphic design software.
-- [Giphy](https://giphy.com/) - Video to gif conversion website for user story testing section.
 - [Font Awesome](https://fontawesome.com/search) - The icons used on the site from font awesome.
 - [Quick DBD](https://www.quickdatabasediagrams.com/) - Flow chart maker used for database models.
 - [Temp Mail](https://temp-mail.org/en/) - Temporary email account for testing registrations and orders.
@@ -995,7 +970,7 @@ There are a number of applications that need to be configured to run this applic
 
 ## Amazon Web Services
 1. Create an account at aws.amazon.com
-2. Open the S3 application and create an S3 bucket named "poster-prints"
+2. Open the S3 application and create an S3 bucket named "nix-melts"
 3. Uncheck the "Block All Public access setting"
 4. In the Properties section, navigate to the "Static Website Hosting" section and click edit
 5. Enable the setting, and set the index.html and the error.html values
@@ -1017,8 +992,8 @@ There are a number of applications that need to be configured to run this applic
 13. Click "Import Managed Policy" and select "AmazonS3FullAccess" > Click 'Import'.
 14. In the JSON editor, update the policy "Resource" to the following
 <br><code>"Resource": [</code>
-<br><code>"arn:aws:s3:::poster-prints",</code>
-<br><code>"arn:aws:s3:::poster-prints/*"</code>
+<br><code>"arn:aws:s3:::nix-melts",</code>
+<br><code>"arn:aws:s3:::nix-melts/*"</code>
 <br><code>]</code>
 
 15. Give the policy a name and click "Create Policy"
@@ -1047,11 +1022,11 @@ There are a number of applications that need to be configured to run this applic
 ### Local Deployment
 To run this project locally, you will need to clone the repository
 1. Login to GitHub (https://wwww.github.com)
-2. Select the repository jamie2210/CI_MS3_PP
-3. Click the Code button and copy the HTTPS url, for example: https://github.com/jamie2210/CI_MS4_PP
+2. Select the repository sandham-a87/ms4-nix-melts
+3. Click the Code button and copy the HTTPS url, for example: https://github.com/Sandham-a/ms4-nix-melts
 4. In your IDE, open a terminal and run the git clone command, for example 
 
-    ```git clone https://github.com/jamie2210/CI_MS4_PP```
+    ```git clone https://github.com/Sandham-a/ms4-nix-melts```
 
 5. The repository will now be cloned in your workspace
 6. Create an env.py file in the root folder in your project, and add in the following code with the relevant key, value pairs, and ensure you enter the correct key values<br>
@@ -1059,8 +1034,6 @@ To run this project locally, you will need to clone the repository
 <code>os.environ.setdefault("IP", TO BE ADDED BY USER)</code><br>
 <code>os.environ.setdefault("PORT", TO BE ADDED BY USER)</code><br>
 <code>os.environ.setdefault("SECRET_KEY", TO BE ADDED BY USER)</code><br>
-<code>os.environ.setdefault("MONGO_URI", TO BE ADDED BY USER)</code><br>
-<code>os.environ.setdefault("MONGO_DBNAME", TO BE ADDED BY USER)</code><br>
 <code>os.environ.setdefault("AWS_ACCESS_KEY_ID", TO BE ADDED BY USER)</code><br>
 <code>os.environ.setdefault("AWS_SECRET_ACCESS_KEY", TO BE ADDED BY USER)</code>
 7. Install the relevant packages as per the requirements.txt file
@@ -1159,7 +1132,6 @@ else:
 _ _ _
 
 * The project is based on the Boutique Ado project by the Code Institute and was used as a basic for my project (https://github.com/Code-Institute-Solutions/boutique_ado_v1/)
-* Previous projects I have done on the course were used for guidance through.
 
 * [Bootstrap](https://getbootstrap.com/) is used throughout for CSS styling and some javascript / jquery
 
@@ -1201,13 +1173,9 @@ _ _ _
   * All photos are taken from [Pexels](https://www.pexels.com/)
   * Each photo is credited to the photographer on the product details page.
 
-## __Acknowledgements__
-_ _ _
-
-I would like to take the opportunity to thank;
-
-- My mentor, Mo Shami, for his excellent feedback, advice support and guidance throughout.
-- Tutor support from Code Institute for their guidance when stuck on a particular problem with the bag app.
-- The slack community of coders for immediate and helpful response.
-- WAES College and my Tutor Michael for their support and help throughout.
-- My friends and family who have created accounts and tested the site and given valid feedback helping me fix bugs I was otherwise unaware of.
+## Acknowledgments
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his feedback, advice, guidance and support.
+- My girlfriend Nicola for allowing me time to do this project with my precious weekends with her.
+- THe code institute tutor for providing me with help for some of my trickier problems.
+- My parents who own gave me child free time to work on this project.
