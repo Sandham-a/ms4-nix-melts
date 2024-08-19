@@ -89,7 +89,7 @@ _ _ _
 ### Primary Goal
 The primary goal of the website from the site 
 owners perspective is as follows:
-- To add, edit and delete products with the relevant information (price, description, image, sizes, stock and category) on the website 
+- To add, edit and delete products with the relevant information (price, description, image and collection) on the website 
 - To allow a user to make a purchase of the posters on the website
 - To display low stocked items
 - Allow the user an easy means of contact
@@ -157,7 +157,6 @@ To complement the apps there are:
 - static: Base css and Javascript files, favicon image There is some javascript in some html files, but I have tried to minimise that using separate js files throughout
 - manage.py: Main python file for starting the website
 - README.md: Readme documentation
-- TESTING.md: Testing documentation
 - Procfile: To run the application
 - Requirements.txt: Containing the python libraries installed
 <br>
@@ -170,10 +169,6 @@ _ _ _
 - The backend consists of Python built with the Django framework with a database of a Postgres using Elephant SQL for the deployed Heroku version(production)
 - Postgres is a powerful, open-source object-relational database system (https://www.postgresql.org/)
 - A SQLLite database was used for local development (https://www.sqlite.org/index.html)
-
-#### Physical database model
-This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the Postgres database
-<br>![Database model](documentation/images/database_schema.png)
 
 #### Models
 _ _ _ 
@@ -353,16 +348,6 @@ I feel the colours create the desired effect, making the website warm and inviti
 
 ![Colour Palette](documentation/images/colour-patch.png)
 
-### Typography
-Noto Serif is used through as the brands main font, 'Roboto' used throughout for the main text font. Both have a fallback of 'sans-serif'.
-
-<details><summary>Noto Serif</summary>
-<img src="documentation/images/noto.png">
-</details>
-<details><summary>Roboto</summary>
-<img src="documentation/images/roboto.png">
-</details>
-<br>
 
 # Features
 _ _ _
@@ -435,18 +420,6 @@ Defensive programming is used throughout to prevent users accessing pages they d
 
   ![Mobile Navbar](documentation/features/mobile-navbar.gif)
 
-
-### Footer
-
-- The footer is displayed on all pages and includes social links, my GitHub link to this repository, contact details and a link to the contact page, the copyright year, and payment information.
-- It changes from a horizontal list to a vertical one depending on the screen size.
-- User Stories covered: 6
-
-  ![Footer](documentation/features/footer.png)
-  
-  <details><summary>Mobile Footer</summary>
-  <img src="documentation/features/mobile-footer.png">
-  </details>
 
 ## Main Content Features
 _ _ _
@@ -617,7 +590,7 @@ _ _ _
 
 - All posters page and the options for sorting, search and categorising:
 
-  ![All Posters](documentation/features/products/all-posters.png)
+  ![All Products](documentation/features/products/all-posters.png)
 
 
 ### Product Detail
@@ -626,29 +599,26 @@ _ _ _
 - Any user can access the product detail page by clicking on the poster of choice.
 - when the mouse hovers over the poster it increases in size highlighting the selection if clicked.
 - On the product detail page the following is displayed:
-  * If the item has a second image it is displayed, otherwise the same image is
   * The Title
   * The price
   * Descriptions
-  * Size or size options if available
   * Add to Favourites option if logged in
   * Quantity options
-  * Call to action if low on stock
   * 'Add To Cart' button
 
 - User stories covered: 3, 4, 12, 18
 
 - Stocked Item:
 
-  ![All Posters](documentation/features/products/stocked.png)
+  ![All Products](documentation/features/products/stocked.png)
 
 - Item By Size:
 
-  ![All Posters](documentation/features/products/by-size.png)
+  ![All Products](documentation/features/products/by-size.png)
 
 - Favourites Option (Logged in user)
 
-  ![All Posters](documentation/features/products/favourites.png)
+  ![All Products](documentation/features/products/favourites.png)
 
 
 ### Product Management (Add Product)
@@ -822,15 +792,6 @@ _ _ _
 
   ![User Profile](documentation/features/user-profile.png)
 
-### Error Pages
-_ _ _
-
-- All error pages direct the user back to the home page via a home button
-- User Stories covered: 28
-
-- Error Page:
-
-  ![Error Page](documentation/features/error-page.png)
 
 ## Future Implementations
 _ _ _
@@ -859,7 +820,7 @@ _ _ _
 ### Frameworks
 
 - [Django](https://www.djangoproject.com/) - Version 3.2.16 - A ython web framework for pragmatic design.
-- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) -- A framework for building responsive, mobile-first sites.
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) -- A framework for building responsive, mobile-first sites.
 
 ### Libraries & Packages
 
@@ -893,6 +854,7 @@ _ _ _
 - [jshint](https://jshint.com/) - Javascript validation testing.
 - [pep8](http://ww7.pep8online.com/) - Python validation testing.
 - [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - For performance, accessibility, progressive web apps, SEO analysis of the project code.
+- [ChatGPT](http://chatgpt.com) - used to create the descriptions for melts and help with debugging.
 
 ### Stripe
 
