@@ -10,6 +10,7 @@ body {
     font-family: 'Lato';
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -27,6 +28,10 @@ body {
     width: fit-content;
 }
 
+#site-logo{
+    height: 150px;
+    width: 150px;
+}
 .shop-now-button {
     background: black;
     color: white;
