@@ -67,20 +67,13 @@ class StripeWH_Handler:
         """Helper method to create order line items"""
         for item_id, item_data in json.loads(bag).items():
             product = Product.objects.get(id=item_id)
-            if isinstance(item_data, int):
-                OrderLineItem.objects.create(
+            isinstance(item_data, int)
+            OrderLineItem.objects.create(
                     order=order,
                     product=product,
                     quantity=item_data,
-                )
-            else:
-                for size, quantity in item_data['items_by_size'].items():
-                    OrderLineItem.objects.create(
-                        order=order,
-                        product=product,
-                        quantity=quantity,
-                        product_size=size,
                     )
+            
 
     def handle_payment_intent_succeeded(self, event):
         """
