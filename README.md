@@ -952,7 +952,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 <br><code>os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')</code>
 
 6. Back in the Developers section of your stripe account click on Webhooks
-7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://poster-prints-8ff329d79ba2.herokuapp.com//checkout/wh/
+7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://https://ms4-nix-melts-2c2938ad0154.herokuapp.com/checkout/wh/
 8. Note the secret key created for this webhook
 <br><details><summary>Secret Key</summary>
 <img src="documentation/deployment/secret-key.png">
@@ -1146,11 +1146,7 @@ _ _ _
     - The icons used on the site from font awesome.
     
 - Fonts<br>
-    [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif?query=noto+ser)    
-    - The text font Noto Serif is used as the main logo font and styling of the brand.
-  
-  [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto)
-    - Robot is used for all other text throughout.
+
 
 ## Media
 _ _ _
