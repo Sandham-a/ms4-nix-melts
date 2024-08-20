@@ -78,8 +78,8 @@ Nix Melts is an ecommerce  website allowing users to purchase wax melt fregrence
 # Project Overview
 
 - This project is a website is for submission as milestone project 4 as part of the Code Institute - Level 5 Diploma in Software Development course (Full Stack).
-- The repository on GitHub that contains the website source code and assets is available at the following url: [Code Repository](https://github.com/jamie2210/CI_MS4_PP)
-- The website was built to be responsive on desktop, tablet and mobile devices.
+- The repository on GitHub that contains the website source code and assets is available at the following url: [Code Repository](https://https://github.com/Sandham-a/ms4-nix-melts)
+- The website was built to be responsive so that it can work on desktops, tablets and mobiles.
 
 # User Experience
 
@@ -91,7 +91,6 @@ The primary goal of the website from the site
 owners perspective is as follows:
 - To add, edit and delete products with the relevant information (price, description, image and collection) on the website 
 - To allow a user to make a purchase of the posters on the website
-- To display low stocked items
 - Allow the user an easy means of contact
 
 The primary goal of the website from a site users' perspective is as follows:
@@ -327,23 +326,6 @@ _ _ _
 <details><summary>Errors</summary>
 <img src="documentation/wireframes/errors.png">
 </details><br>
-
-## Surface
-_ _ _
-
-### Colour Palette
-As posters are bought on their visual appeal I wanted to ensure they really stood out against the rest of the website. It was important to me to create and warm and gentle design with subtle and calm colours and please fonts. The colours chosen are light and complement each other, none are vibrant or too strong ensuring the imagery of each poster is always the most eye catching.
-
-There are 4 primary colours in the colour palette:
-- 504e4d - Dark grey used for the majority of text on the website.
-- f0eddf - The main light shade of yellow / cream used throughout.
-- eee9cc - A slight lighter tone of a similar yellow / cream for text.
-- e5e3e2 - A subtle purple / grey used for the padding on the poster galleries which also match the wall on the home page image.
-
-I feel the colours create the desired effect, making the website warm and inviting and allowing the posters to really stand out.
-
-![Colour Palette](documentation/images/colour-patch.png)
-
 
 # Features
 _ _ _
@@ -814,7 +796,7 @@ _ _ _
 
 ### Frameworks
 
-- [Django](https://www.djangoproject.com/) - Version 3.2.16 - A ython web framework for pragmatic design.
+- [Django](https://www.djangoproject.com/) - Version 3.2.16 - A python web framework for pragmatic design.
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) -- A framework for building responsive, mobile-first sites.
 
 ### Libraries & Packages
@@ -1090,11 +1072,9 @@ _ _ _
 
 * The project is based on the Boutique Ado project by the Code Institute and was used as a basic for my project (https://github.com/Code-Institute-Solutions/boutique_ado_v1/)
 
-* [Bootstrap](https://getbootstrap.com/) is used throughout for CSS styling and some javascript / jquery
+* [Bootstrap](https://getbootstrap.com/) is used throughout for CSS styling and some javascript / jquery.
 
-* I used [Stack Overflow](https://stackoverflow.com/) for a lot of programming issues, for example;
-   - https://stackoverflow.com/questions/9490906/how-to-change-a-select-value-from-javascript
-   - https://stackoverflow.com/questions/61491765/re-positioning-scroll-to-top-button-when-footer-appears-so-it-never-overlaps
+* I used [ChatGPT](chatgpt.com) to help with debugging and generating the information to put into the store.
 
 ## __Content__
 _ _ _
@@ -1108,23 +1088,9 @@ _ _ _
 ## Media
 _ _ _
 
-* __Source Unknown__ - For the purpose of this course and project I have taken images from the internet where I was unable to find the source and therefore credit the owner. If this site were to ever go live these images would be removed and never used for monetary gain. They are purely for the content of the course.
-
-* Film Posters
-  * The majority of the film posters were sourced from [IMDb](https://www.imdb.com/)
-  * The Film posters that were not - __Source Unknown__
-
-* Graphic Design Posters
-  * Some Artwork is my own, which is stated on the product detail.
-  * The Artwork is not is as follows:
-    * Comic - __Source Unknown__
-    * Illustrations - __Source Unknown__ 
-      * Marilyn Monroe Art Print [Stars on Art](https://pixels.com/profiles/stars-onart)  
-    * Typography - [Freepik](https://www.freepik.com/free-photos-vectors/motivational-quotes)
-
 * Photography
-  * All photos are taken from [Pexels](https://www.pexels.com/)
-  * Each photo is credited to the photographer on the product details page.
+  * Several photos are taken from [dreamstime](https://www.dreamstime.com/) these photos have the watermark and I in no way claim ownership of them.
+  * Other photographs are taken from Nix melts facebook and instagram page and I have the permission of the owner to use them. 
 
 ## Acknowledgments
 I would like to take the opportunity to thank:
