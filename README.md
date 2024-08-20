@@ -192,20 +192,16 @@ default_town_or_city, default_county, default_postcode and default_country
 - It contains Order and Product as foreign-keys.
 - The model contains the following fields: order, product, product_size, quantity, lineitem_total
 
-##### Favourites Model
-- The Favourites model contains a user's favourite products
-- It contains Products as many-to-many field, and User as a one-to-one relationship
-- The model contains the following fields: products, username
 
 ##### Product Model
 - The Product Model represents a poster and its details
 - It contains Category as a foreign-key
-- The model contains the following fields: name, category, sku, description, feature, feature2, feature3, unique_size, stock, has_sizes, price, a4_price, a3_price, a2_price, a1_price, a0_price image_url, image, image2_url, image2
-- The image fields contain the poster image(s)
+- The model contains the following fields: name, collection, sku, description, price, image_url, image,
+- The image fields contains image of the wax melt
 - The image_url field contains the url to where the image file is physically stored, for example AWS S3 bucket
 
-##### Category Model
-- The Category model contains a product category
+##### Collection Model
+- The Category model contains a product collections
 - The model contains the following fields: name, friendly_name
 
 ##### Contact Model
@@ -425,7 +421,6 @@ Defensive programming is used throughout to prevent users accessing pages they d
 _ _ _
 
 ### HomePage
-
 _ _ _
 
 - Home page consists of a welcome message and button that links to view the entire gallery of posters.
@@ -581,8 +576,8 @@ _ _ _
 ### Products
 _ _ _
 
-- All posters can be viewed by any user whether logged in or out.
-- Categories are listed in the navbar for easy access as well as a search bar.
+- All wax melts can be viewed by any user whether logged in or out.
+- Collections are listed in the navbar for easy access as well as a search bar.
 - Sorting posters by various fields is also an option.
 - the 'All Products' view is randomised to ensure users are always offered something new to encourage new purchases.
 - A banner is displayed advertising the free delivery threshold.

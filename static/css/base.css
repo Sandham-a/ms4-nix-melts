@@ -29,7 +29,6 @@ body {
 }
 
 #site-logo{
-    background: url('https://ms4-nix-melts.s3.eu-west-2.amazonaws.com/media/nix_melts_logo.jpg') no-repeat center center fixed;
     height: 150px;
     width: 150px;
 }
